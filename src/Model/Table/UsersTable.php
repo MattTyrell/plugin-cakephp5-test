@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace TsUserBtoB\Model\Table;
+namespace TsUserBToB\Model\Table;
 
 use Cake\ORM\Query\SelectQuery;
 use Cake\ORM\RulesChecker;

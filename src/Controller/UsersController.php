@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace TsUserBtoB\Controller;
+namespace TsUserBToB\Controller;
 
 use TsUserBtoB\Controller\AppController;
 
