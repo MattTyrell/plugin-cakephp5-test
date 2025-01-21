@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace TsUserBToB\Controller;
 
-use TsUserBtoB\Controller\AppController;
+use TsUserBToB\Controller\AppController;
 
 /**
  * Users Controller

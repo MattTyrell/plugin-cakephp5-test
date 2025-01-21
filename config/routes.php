@@ -4,7 +4,7 @@ use Cake\Routing\RouteBuilder;
 
 return function (RouteBuilder $routes):void {
     $routes->plugin(
-        'Matthewtan/Userbtob',
+        'TsUserBToB',
         ['path' => '/userbtob'],
         function (RouteBuilder $builder) {
             // Add custom routes here
