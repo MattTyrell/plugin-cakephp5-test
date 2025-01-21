@@ -10,7 +10,7 @@ use TsUserBtoB\Controller\UsersController;
 /**
  * TsUserBtoB\Controller\UsersController Test Case
  *
- * @uses \TsUserBtoB\Controller\UsersController
+ * @uses \TsUserBToB\Controller\UsersController
  */
 class UsersControllerTest extends TestCase
 {
