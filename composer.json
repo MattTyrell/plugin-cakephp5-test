@@ -1,5 +1,5 @@
 {
-    "name": "matthewtan/userbtob",
+    "name": "matthewtan/ts-user-b-to-b",
     "type": "cakephp-plugin",
     "require": {
         "php": ">=8.1",
