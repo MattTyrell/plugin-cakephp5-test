@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace TsUserBtoB\Test\TestCase\Model\Table;
+namespace TsUserBToB\Test\TestCase\Model\Table;
 
 use Cake\TestSuite\TestCase;
 use TsUserBtoB\Model\Table\UsersTable;
