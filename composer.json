@@ -15,13 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Matthewtan\\Userbtob\\": "src/"
+            "Matthewtan\\TsUserBtoB\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Matthewtan\\Userbtob\\Test\\": "tests/",
-            "Matthewtan\\Userbtob\\Test\\Fixture\\": "tests/Fixture/",
+            "Matthewtan\\TsUserBtoB\\Test\\": "tests/",
+            "Matthewtan\\TsUserBtoB\\Test\\Fixture\\": "tests/Fixture/",
             "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
         }
     },
