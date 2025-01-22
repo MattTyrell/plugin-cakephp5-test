@@ -26,6 +26,7 @@ use Cake\Validation\Validator;
  * @method iterable<\TsUserBtoB\Model\Entity\User>|\Cake\Datasource\ResultSetInterface<\TsUserBtoB\Model\Entity\User> deleteManyOrFail(iterable $entities, array $options = [])
  *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
+ * @mixin \Muffin\Trash\Model\Behavior\TrashBehavior
  */
 class UsersTable extends Table
 {
@@ -44,6 +45,7 @@ class UsersTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $this->addBehavior('Muffin/Trash.Trash');
     }
 
     /**

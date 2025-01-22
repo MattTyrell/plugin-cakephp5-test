@@ -1,8 +1,8 @@
 <?php
-use Cake\Routing\Route\DashedRoute;
+
 use Cake\Routing\RouteBuilder;
 
-return function (RouteBuilder $routes):void {
+return function (RouteBuilder $routes): void {
     $routes->plugin(
         'TsUserBToB',
         ['path' => '/userbtob'],
