@@ -44,7 +44,7 @@ class TsUserBtoBPlugin extends BasePlugin
         $routes->plugin(
             'TsUserBtoB',
             ['path' => '/ts-user-bto-b'],
-            function (RouteBuilder $builder) {
+            function (RouteBuilder $builder): void {
                 // Add custom routes here
 
                 $builder->fallbacks();
