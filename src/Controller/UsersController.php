@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace TsUserBToB\Controller;
 
+use Cake\Http\Response;
+
 /**
  * Users Controller
  *
@@ -10,6 +12,12 @@ namespace TsUserBToB\Controller;
  */
 class UsersController extends AppController
 {
+    public function initialize(): void
+    {
+        parent::initialize();
+        $this->Authentication->allowUnauthenticated(['login']);
+    }
+
     /**
      * Index method
      *
@@ -17,7 +25,7 @@ class UsersController extends AppController
      */
     public function index()
     {
-        
+
         $query = $this->Users->find();
         $users = $this->paginate($query);
 
@@ -97,5 +105,34 @@ class UsersController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    /**
+     * Login method.
+     *
+     * @return \Cake\Http\Response|null|void
+     */
+    public function login()
+    {
+        $result = $this->Authentication->getResult();
+        // If the user is logged in send them away.
+        if ($result->isValid()) {
+            return $this->redirect(['action' => 'index']);
+        }
+        if ($this->request->is('post')) {
+            $this->Flash->error('Invalid username or password');
+        }
+    }
+
+    /**
+     * Logout method.
+     *
+     * @return \Cake\Http\Response
+     */
+    public function logout(): Response
+    {
+        $this->Authentication->logout();
+
+        return $this->redirect(['controller' => 'Users', 'action' => 'login']);
     }
 }
